@@ -1,0 +1,62 @@
+.layout {
+  margin-bottom: 90px;
+}
+
+.list--reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* 1 */
+.form1 {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form--one {
+  display: flex;
+}
+
+.input {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.form-one__input:not(:last-child) {
+  margin-right: 20px;
+}
+
+.submit--button {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 20px 40px;
+  color: white;
+  background-color: black;
+}
+
+/* 2 */
+.form2 {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form__two__list__title {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.form--two__input {
+  width: 100%;
+}
+
+.form--two__list__item {
+  margin-bottom: 25px;
+}
+
+.form--two__button {
+  margin-left: auto;
+}

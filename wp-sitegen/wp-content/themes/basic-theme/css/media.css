@@ -1,0 +1,221 @@
+/* pc */
+@media(max-width: 4096px) {
+    :root {
+        --gap: 150px;
+        --mb_title: 50px;
+        --mb_p: 20px;
+		--section_gap: 60px;
+    }
+}
+/* планшет */
+@media(max-width: 1024px) {
+    :root {
+        --gap: 100px;
+        --mb_title: 30px;
+        --mb_p: 20px;
+		--section_gap: 40px;
+    }
+}
+@media(max-width: 600px) {
+    .template1 {
+        flex-direction: column-reverse;
+    }
+
+    .template2 {
+        flex-direction: column;
+    }
+
+    .descr, .img {
+        width: 100%;
+	}
+	.comprastion2__title {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .comprastion1__list {
+        flex-direction: column;
+    }
+
+    .comprastion1__list__item {
+        width: 100%;
+    }
+
+    .comprastion2__list {
+        flex-direction: column;
+    }
+
+    .comprastion2__list__item {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .comprastion2__list__item:not(:last-child) {
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 1000px) {
+
+    /* 1 */
+    .feature1__title {
+        margin-bottom: 30px;
+    }
+
+    .feature1__header {
+        margin-bottom: 60px;
+    }
+
+    /* 2 */
+    .feature2__title {
+        margin-bottom: 70px;
+    }
+
+    .feature2__content {
+        flex-direction: column-reverse;
+    }
+
+    .feature2__img {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .feature2__list {
+        max-width: 100%;
+    }
+
+    .feature2__list__item {
+        margin-right: 0;
+    }
+	
+	.feature3__header {
+        margin-bottom: 60px;
+    }
+	
+	.feature3__circle {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        /* margin-right: auto;
+        margin-left: auto; */
+        /* margin-bottom: 20px; */
+        line-height: 50px;
+    }
+	
+	/* Forms */
+	
+
+  .form1 {
+    width: 100%;
+  }
+
+  .form--one {
+    flex-direction: column;
+  }
+
+  .form-one__input {
+    width: 100%;
+  }
+
+  .form-one__input:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+/* телефон */
+@media(max-width: 480px) {
+    :root {
+        --gap: 30px;
+        --mb_title: 20px;
+        --mb_p: 10px;
+		--section_gap: 30px;
+    }
+}
+
+@media(max-width: 800px) {
+    .header--container {
+        flex-direction: row-reverse;
+    }
+
+    .header__nav {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        max-width: 420px;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background-color: var(--header-back-color);
+        overflow-y: auto;
+        visibility: hidden;
+        z-index: 10;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .header__nav--active {
+        transform: none;
+    }
+
+    .nav {
+        flex-direction: column;
+        padding-top: 170px !important;
+    }
+
+    .nav__item {
+        width: fit-content;
+        padding-left: calc(var(--gap) / 2);
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .stop-scroll {
+        overflow: hidden;
+    }
+
+    .header__burger {
+        display: inline-block;
+        position: relative;
+        height: 16px;
+        width: 20px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .header__burger--active .burger__line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header__burger--active .burger__line:first-child {
+        left: 0;
+        top: 45%;
+        transform: rotate(45deg);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+    .header__burger--active .burger__line:last-child {
+        left: 0;
+        top: 45%;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+    .burger__line:nth-child(1) {
+        top: 0;
+    }
+
+    .burger__line:nth-child(3) {
+        top: 100%;
+    }
+}

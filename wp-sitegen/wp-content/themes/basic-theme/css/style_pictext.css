@@ -1,0 +1,17 @@
+.template1, .template2 {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    margin-right: 50px;
+}
+
+.descr, .img {
+    width: calc(50% - 25px);
+}
+
+.descr {
+    padding: 20px;
+    padding-right: 0;
+}

@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --footer_color: #2e2b44;
+	--footer_icon_color: #000000;
+}
+
+.list--reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__black {
+    background-color: var(--footer_color);
+}
+
+.footer__black__list {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.footer__black__list__icon:not(:last-child) {
+    margin-right: 34px;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--footer_icon_color);
+}
+
+.footer__copyright {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 13px;
+}
+

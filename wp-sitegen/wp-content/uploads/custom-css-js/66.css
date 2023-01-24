@@ -1,0 +1,266 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.center_block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, img, div {
+  margin: 0;
+  margin-bottom: var(--mb_title);
+}
+
+.list--reset{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  width: calc(100% - var(--gap)) !important;
+  margin: 0 auto !important;
+  background-color: inherit !important;
+}
+
+
+
+/* Шрифты (дефолтные) */
+.courier_new {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.franklin_gothic_medium {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gill_sans {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lucida_sans {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.segoe {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.times_new_roman {
+  font-family:'Times New Roman', Times, serif
+}
+
+.trebuchet {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cambria {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.georgia {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.impact {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* Оформление текста */
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+
+/* Центрирование текста */
+.start {
+  text-align: start;
+}
+
+.center {
+  text-align: center;
+}
+
+.end {
+  text-align: end;
+}
+
+.wide{
+  text-align: justify;
+}
+
+
+/* Отзеркалить изображение */
+
+.horizontal {
+  transform: scale(-1, 1);
+}
+
+.vertical {
+  transform: scale(1, -1);
+}
+
+/* Преимущества----------------------- */
+:root {
+	--row_len: 3;
+}
+
+.feature__title {
+  font-weight: 600;
+  font-size: 38px;
+  text-align: center;
+}
+
+.feature__title--h3 {
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+  color: #555;
+}
+
+.feature__list__item {
+  display: flex;
+  align-items: center;
+}
+
+.feature__icon {
+  margin-right: 20px;
+}
+/* 1 */
+.feature1__header {
+  margin-bottom: 80px;
+}
+
+.feature1__title {
+  margin-bottom: 40px;
+}
+
+.feature1__list {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.feature1__list__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.feature1__list__text__title {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.list__text__par {
+  font-size: 16px;
+  color: #555;
+}
+/* 2 */
+.feature2__title {
+  margin-bottom: 105px;
+}
+
+.feature2__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature2__list {
+  max-width: 50%;
+}
+
+.feature2__img {
+  max-width: 50%;
+}
+
+.feature2__list__text__title {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.feature2__list__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+/* 3 */
+.feature3__header {
+  margin-bottom: 105px;
+}
+
+.feature3__title {
+  margin-bottom: 40px;
+}
+
+.feature3__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature3__list__item {
+  min-width: 220px;
+  width: calc((100% - (var(--row_len)-1) * 65px ) / var(--row_len));
+  margin-bottom: 65px;
+  align-items: flex-start;
+}
+/* Последний эл. строки обнулять стиль, и margin-right: 65px; :not(:nth-child(3n))*/
+.feature3__list__item{
+  margin-right: 65px;
+}
+
+.feature3__circle {
+  flex-shrink: 0;
+  margin-right: 35px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 60px;
+  border-radius: 180px;
+  background-color: #ededed;
+}</style>
+<!-- end Simple Custom CSS and JS -->

@@ -121,7 +121,9 @@ switch ( $action ) {
         wp_enqueue_script('text-formatter', get_admin_url() . '/js/text-formatter.js', null, microtime());
         
         wp_enqueue_style('fonts_new', get_admin_url() . '/css/fonts_new.css', null, microtime());
-
+        
+        wp_enqueue_style('style_pic', get_admin_url() . '/css/style_pic.css', null, microtime());
+        
 		if ( empty( $post_id ) ) {
 			wp_redirect( admin_url( 'post.php' ) );
 			exit;
